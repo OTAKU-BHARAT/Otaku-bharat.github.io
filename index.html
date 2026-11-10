@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otaku Bharat — India's Voice for Anime-Inspired Fashion</title>
+<meta name="description" content="Otaku Bharat demo store. Anime-inspired streetwear, featuring the SCOTT FINCHER Black Oversized Hoodie with Tokyo Ronin graphic print.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">OTAKU <span>BHARAT</span></div>
+  <nav>
+    <a href="#drop">The Drop</a>
+    <a href="#details">Details</a>
+    <a href="#policies">Policies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="bag-button" class="bag-button" type="button">Bag (<span id="bag-count">0</span>)</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Demo Store — GitHub Pages</p>
+      <h1>India's Voice for Anime-Inspired Fashion</h1>
+      <p class="hero-text">Streetwear that reflects your personality. Stand out without compromising on comfort.</p>
+      <a class="cta" href="#drop">Shop the drop</a>
+      <p class="hero-note">Sunday Special: 5% off on orders above ₹1000</p>
+    </div>
+    <div class="hero-product" aria-label="Hoodie preview">
+      <div class="view-toggle" role="group" aria-label="Hoodie view">
+        <button type="button" id="view-front" class="toggle active">Front</button>
+        <button type="button" id="view-back" class="toggle">Back</button>
+      </div>
+      <!-- Stylised illustration of the product, not a photograph -->
+      <svg id="hoodie-front" class="hoodie-svg" viewBox="0 0 300 300" role="img" aria-label="Black hoodie, front view with small Tokyo chest print">
+        <path d="M110 55 Q150 30 190 55 L235 80 L265 150 L235 160 L225 120 L225 260 Q150 275 75 260 L75 120 L65 160 L35 150 L65 80 Z" fill="#151515" stroke="#333"/>
+        <path d="M115 55 Q150 85 185 55 Q175 40 150 40 Q125 40 115 55Z" fill="#1e1e1e" stroke="#333"/>
+        <rect x="100" y="205" width="100" height="42" rx="6" fill="#1b1b1b" stroke="#333"/>
+        <text x="150" y="130" text-anchor="middle" fill="#e8e3d5" font-size="17" font-family="serif">東京</text>
+        <text x="150" y="150" text-anchor="middle" fill="#9a958a" font-size="9" letter-spacing="2">TOKYO</text>
+      </svg>
+      <svg id="hoodie-back" class="hoodie-svg hidden" viewBox="0 0 300 300" role="img" aria-label="Black hoodie, back view with large ronin graphic print">
+        <path d="M110 55 Q150 30 190 55 L235 80 L265 150 L235 160 L225 120 L225 260 Q150 275 75 260 L75 120 L65 160 L35 150 L65 80 Z" fill="#151515" stroke="#333"/>
+        <circle cx="150" cy="125" r="38" fill="none" stroke="#c8402a" stroke-width="3"/>
+        <text x="150" y="118" text-anchor="middle" fill="#e8e3d5" font-size="15" font-family="serif">浪人</text>
+        <text x="150" y="142" text-anchor="middle" fill="#e8e3d5" font-size="11" letter-spacing="3">RONIN</text>
+        <text x="150" y="195" text-anchor="middle" fill="#e8e3d5" font-size="24" letter-spacing="6" font-weight="bold">TOKYO</text>
+        <rect x="100" y="215" width="100" height="32" rx="6" fill="#1b1b1b" stroke="#333"/>
+      </svg>
+      <p class="caption">Illustration hai, asli product photo nahi — front par chhota Tokyo chest print, back par bada ronin TOKYO print.</p>
+    </div>
+  </section>
+
+  <section id="drop" class="drop">
+    <h2>The Drop</h2>
+    <article class="product-card">
+      <div class="product-info">
+        <h3>SCOTT FINCHER Men's Black Oversized Hoodie – Tokyo Ronin Graphic Print, Anime-Inspired Streetwear</h3>
+        <p class="price">₹459</p>
+        <p>Black graphic printed hoodie on a classic black base, with a relaxed oversized fit, kangaroo pocket and drawstring hood.</p>
+        <label class="size-label" for="size">Size</label>
+        <select id="size">
+          <option value="M" selected>M — Chest 40in, Length 26in</option>
+        </select>
+        <button id="add-to-bag" class="cta" type="button">Add to Bag</button>
+        <p id="bag-message" class="bag-message" role="status"></p>
+      </div>
+      <ul class="highlights">
+        <li>Bold ronin graphic print on the back with TOKYO lettering</li>
+        <li>Small Tokyo calligraphy print on the chest</li>
+        <li>Relaxed oversized fit, long sleeves</li>
+        <li>Comfortable fleece fabric</li>
+        <li>Kangaroo pocket and drawstring hood</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="details" class="details">
+    <h2>Product Details</h2>
+    <table>
+      <tr><th>Brand</th><td>SCOTT FINCHER</td></tr>
+      <tr><th>Colour</th><td>Black</td></tr>
+      <tr><th>Fabric</th><td>Fleece</td></tr>
+      <tr><th>Fit</th><td>Oversized</td></tr>
+      <tr><th>Sleeve Length</th><td>Long Sleeves</td></tr>
+      <tr><th>Size M</th><td>Chest 40 inches, Length 26 inches, Hip 40 inches</td></tr>
+      <tr><th>Care</th><td>Gentle machine wash with similar colours, wash inside out, do not bleach, do not iron directly on the print</td></tr>
+    </table>
+  </section>
+
+  <section id="policies" class="policies">
+    <h2>Store Policies</h2>
+    <ul>
+      <li>Fast dispatch: 24–48 hours</li>
+      <li>Sunday Special: 5% off on orders above ₹1000</li>
+      <li>Returns or exchanges only in case of a damaged or incorrect product</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Instagram: <a href="https://www.instagram.com/otakubharat_clothing">@otakubharat_clothing</a></p>
+    <p>Email: <a href="mailto:otaku.bharat@outlook.com">otaku.bharat@outlook.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>OTAKU BHARAT — India's Voice for Anime-Inspired Fashion.</p>
+  <p class="demo-note">Ye ek demo store hai. Is page par koi real payment ya order nahi hota.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
